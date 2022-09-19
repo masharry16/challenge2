@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class=" bg-gray-200 dark:bg-gray-900 flex flex-wrap items-center justify-center">
+        <div class="container max-w-lg bg-white rounded dark:bg-gray-800 shadow-lg transform duration-200 easy-in-out m-12">
+            <div class="">
+                    <div class="px-7 mb-8 mt-10">
+                        <h2 class="text-3xl font-bold text-green-800 dark:text-gray-300">{{.nama}}</h2>
+                        <p class="text-gray-400 mt-2 dark:text-gray-400">{{.pekerjaan}}</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">{{.alamat}}</p>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">Alasan saya bekerja adalah untuk {{.alasan}}</p>
+                        <div
+                        class="justify-center px-4 py-2 cursor-pointer bg-green-900 max-w-min mx-auto mt-8 rounded-lg text-gray-300 hover:bg-green-800 hover:text-gray-100 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-gray-200">
+                        {{.uname}}@gmail.com {{.state}} {{.msg}}
+                        </div>
+                        <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mt-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
